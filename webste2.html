@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce - Log In or Sign Up</title>
+    <style>
+ {
+ margin: 0;
+ padding: 0; 
+box-sizing: border-box; 
+font-family: Helvetica, Arial, sans-serif; 
+}
+
+body { 
+background-color: #F5F0E6; 
+color: #050505; 
+}
+
+
+/* Header */
+header {
+position: sticky; 
+top: 0;
+background: #fff;
+height: 56px;
+display: flex;
+align-items: center; 
+justify-content: space-between; 
+padding: 0 16px; 
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+z-index: 100;
+}
+
+.header-left {
+display: block;
+align-items: center; 
+gap: 8px;
+}
+
+.logo { 
+font-size: 28px; 
+font-weight: bold; 
+color: #7B1113; 
+}
+
+.search-bar { 
+background: #f0f2f5; 
+border-radius: 50px; 
+padding: 8px 12px; 
+display: flex; 
+align-items: center; 
+gap: 8px; 
+}
+
+.search-bar input { 
+border: none;
+background: transparent;
+outline: none;
+font-size: 15px; 
+}
+
+ /* Main Layout */
+.main-container {
+display: flex; 
+justify-content: space-between; 
+padding: 16px; 
+max-width: 1440px; 
+margin: 0 auto; 
+}
+
+/* Sidebars */
+.sidebar-left, .sidebar-right {
+width: 280px; 
+position: sticky; 
+top: 72px; 
+height: calc(100vh - 88px); 
+overflow-y: auto; 
+}
+
+.sidebar-left 
+ul {
+ list-style: none; 
+}
+
+.sidebar-left 
+li {
+padding: 10px; 
+display: flex; 
+align-items: center; 
+gap: 12px; 
+border-radius: 8px; 
+cursor: pointer; 
+font-weight: 600; 
+}
+
+.sidebar-left li:hover 
+{
+ background: #e4e6eb; 
+}
+
+/* Feed */
+.feed-container {
+flex: 1; 
+max-width: 680px; 
+margin: 0 auto; 
+display: flex; 
+flex-direction: column; 
+gap: 16px; 
+}
+
+.post-box, .post-card {
+background: #800020; 
+border-radius: 8px; 
+padding: 12px 16px; 
+box-shadow: 0 1px 2px rgba(0,0,0,0.1); 
+}
+
+.post-box input { 
+width: 100%; 
+background: ##fff; 
+border: none; 
+border-radius: 50px; 
+padding: 10px 16px; 
+font-size: 15px; 
+outline: none; 
+}
+
+.post-header { 
+display: flex; 
+align-items: center; 
+gap: 10px; 
+margin-bottom: 10px; 
+font-weight: bold; 
+}
+
+.post-content {
+margin-bottom: 10px; 
+font-size: 15px; 
+}
+
+.post-actions {
+ display: flex; 
+justify-content: space-around; 
+border-top: 1px solid #e4e6eb; 
+padding-top: 8px; 
+font-weight: 600; 
+color: #65676b; 
+cursor: pointer; 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">Connecta</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Connecta">
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="sidebar-left">
+            <ul>
+                <li>👤 Profile</li>
+                <li>👥 Friends</li>
+                <li>💾 Saved</li>
+                <li>🛍️ Marketplace</li>
+                <li> Contacts</li>
+            </ul>
+        </div>
+
+        <div class="feed-container">
+            <div class="post-box">
+                <input type="text" placeholder="What's on your mind?">
+            </div>
+
+            <div class="post-card">
+                <div class="post-header">Jane Doe</div>
+                <div class="post-content">Building a responsive frontend clone with standard HTML and CSS!</div>
+                <div class="post-actions">
+                    <span>👍 Like</span>
+                    <span>💬 Comment</span>
+                    <span>↗️ Share</span>
+                </div>
+            </div>
+
+<div class="post-card">
+                <div class="post-header">Miguel Noe</div>
+                <div class="post-content">Developing websites and wed design using JavaScript and HTML!</div>
+                <div class="post-actions">
+                    <span>👍 Like</span>
+                    <span>💬 Comment</span>
+                    <span>↗️ Share</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar-right">
+            <h3>About Us</h3>
+<ul>
+<li><p>Connecting people all over the world to enabling a wider social capital.</p></li>
+<li><p>Widening the view of communication.</p></li>
+<li><p>Unifying people worldwide through our netwwork.</p></li>
+</ul>
+        </div>
+    </div>
+
+</body>
+</html>
